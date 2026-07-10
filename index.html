@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:#f4f4f4;
     color:#222;
 }
@@ -30,29 +31,53 @@ header{
 }
 
 header h1{
-    font-size:48px;
+    font-size:52px;
     margin-bottom:15px;
 }
 
-header p{
+header h3{
+    font-size:24px;
+    font-weight:normal;
+    margin-bottom:15px;
+}
+
+.motto{
     font-size:22px;
+    font-style:italic;
+    margin-bottom:35px;
+}
+
+.header-photo{
+    width:55%;
+    max-width:700px;
+    border-radius:15px;
+    border:5px solid white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+}
+
+.photo-caption{
+    margin-top:18px;
+    font-size:18px;
+    font-style:italic;
+    line-height:1.6;
 }
 
 /* ================= ABOUT ================= */
 
 .about{
-    padding:60px 10%;
-    text-align:center;
     background:white;
+    padding:70px 10%;
+    text-align:center;
 }
 
 .about h2{
-    font-size:38px;
-    margin-bottom:20px;
+    font-size:42px;
+    color:#006400;
+    margin-bottom:25px;
 }
 
 .about p{
-    font-size:20px;
+    font-size:21px;
     line-height:1.8;
 }
 
@@ -65,9 +90,9 @@ header p{
 
 .row{
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    gap:60px;
+    justify-content:space-between;
+    gap:70px;
     margin-bottom:100px;
 }
 
@@ -79,24 +104,24 @@ header p{
 .left img,
 .right img{
     width:100%;
-    border-radius:10px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 
 .quote{
     font-family:"Times New Roman", serif;
-    font-size:40px;
+    font-size:44px;
     font-style:italic;
-    line-height:1.7;
+    line-height:1.8;
     color:#222;
 }
 
 .author{
-    margin-top:30px;
-    font-size:20px;
+    margin-top:25px;
+    font-size:19px;
     font-weight:bold;
-    font-style:normal;
     color:#444;
+    line-height:1.6;
 }
 
 /* ================= FOOTER ================= */
@@ -111,14 +136,30 @@ footer{
 
 /* ================= MOBILE ================= */
 
-@media (max-width:900px){
+@media(max-width:900px){
+
+header h1{
+    font-size:38px;
+}
+
+header h3{
+    font-size:20px;
+}
+
+.motto{
+    font-size:18px;
+}
+
+.header-photo{
+    width:90%;
+}
 
 .row{
     flex-direction:column;
 }
 
 .quote{
-    font-size:28px;
+    font-size:30px;
     text-align:center;
 }
 
@@ -139,8 +180,18 @@ footer{
 
 <h1>Welcome to TeaTechSeekers</h1>
 
-<p>
-Myanmar MSc Students at Assam Agricultural University
+<h3>Myanmar MSc Students at Assam Agricultural University</h3>
+
+<p class="motto">
+Exploring Tea Science Through Learning, Research & Innovation
+</p>
+
+<img src="hod.png" class="header-photo" alt="TeaTechSeekers with HOD">
+
+<p class="photo-caption">
+Myanmar M.Sc. Scholars with the Head of the Department (HOD),<br>
+Department of Tea Husbandry & Technology,<br>
+Assam Agricultural University, Jorhat, Assam, India.
 </p>
 
 </header>
@@ -150,7 +201,7 @@ Myanmar MSc Students at Assam Agricultural University
 <h2>About Us</h2>
 
 <p>
-TeaTechSeekers is a platform created by Myanmar M.Sc. students studying at Assam Agricultural University to share academic knowledge, research activities, student experiences, and innovations in tea science and technology.
+TeaTechSeekers is an academic platform created by Myanmar M.Sc. students studying at Assam Agricultural University. Our mission is to promote tea science through research, innovation, academic collaboration, and knowledge sharing for students, researchers, and tea professionals around the world.
 </p>
 
 </section>
@@ -168,15 +219,13 @@ TeaTechSeekers is a platform created by Myanmar M.Sc. students studying at Assam
 <div class="right">
 
 <p class="quote">
-
 “In the heart of India's tea industry, I learn, research, and innovate to strengthen the future of tea.”
-
 </p>
 
 <p class="author">
-
-*Myanmar M.Sc. Scholar, Department of Tea Husbandry & Technology, Assam Agricultural University
-
+– Myanmar M.Sc. Scholar<br>
+Department of Tea Husbandry & Technology<br>
+Assam Agricultural University
 </p>
 
 </div>
@@ -188,15 +237,13 @@ TeaTechSeekers is a platform created by Myanmar M.Sc. students studying at Assam
 <div class="left">
 
 <p class="quote">
-
 “Growing knowledge, adding value, and shaping the future of tea at Assam Agricultural University.”
-
 </p>
 
 <p class="author">
-
-*Myanmar M.Sc. Scholar, Department of Tea Husbandry & Technology, Assam Agricultural University
-
+– Myanmar M.Sc. Scholar<br>
+Department of Tea Husbandry & Technology<br>
+Assam Agricultural University
 </p>
 
 </div>
@@ -213,9 +260,10 @@ TeaTechSeekers is a platform created by Myanmar M.Sc. students studying at Assam
 
 <footer>
 
-© 2026 TeaTechSeekers | Assam Agricultural University
+© 2026 TeaTechSeekers | Assam Agricultural University | Myanmar M.Sc. Scholars
 
 </footer>
 
 </body>
+
 </html>
