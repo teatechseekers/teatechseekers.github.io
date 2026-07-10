@@ -1,167 +1,225 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeaTechSeekers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <style>
-    body{
-        font-family: Arial, sans-serif;
-        background:#f4f4f4;
-        text-align:center;
-        margin:0;
-    }
+<title>TeaTechSeekers</title>
 
-    header{
-        background:#006400;
-        color:white;
-        padding:50px;
-    }
+<style>
 
-    h1{
-        margin:0;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    section{
-        padding:40px;
-    }
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
 
-    footer{
-        background:#222;
-        color:white;
-        padding:15px;
-    }
+/* ================= HEADER ================= */
 
-    a{
-        color:#006400;
-        text-decoration:none;
-        font-weight:bold;
-    }
+header{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
 
-    /* ---------- Gallery Section ---------- */
+header h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
 
-    .gallery{
-        background:#eef7e5;
-        padding:70px 0;
-    }
+header p{
+    font-size:22px;
+}
 
-    .row{
-        width:90%;
-        margin:60px auto;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:50px;
-    }
+/* ================= ABOUT ================= */
 
-    .left,
-    .right{
-        width:48%;
-    }
+.about{
+    padding:60px 10%;
+    text-align:center;
+    background:white;
+}
 
-    .left img,
-    .right img{
-        width:100%;
-        border-radius:10px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.25);
-    }
+.about h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
 
-    .quote{
-        font-size:30px;
-        font-style:italic;
-        line-height:1.8;
-        text-align:left;
-    }
+.about p{
+    font-size:20px;
+    line-height:1.8;
+}
 
-    /* Mobile */
+/* ================= GALLERY ================= */
 
-    @media(max-width:768px){
+.gallery{
+    background:#eef7e5;
+    padding:80px 8%;
+}
 
-        .row{
-            flex-direction:column;
-        }
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    margin-bottom:100px;
+}
 
-        .left,
-        .right{
-            width:100%;
-        }
+.left,
+.right{
+    flex:1;
+}
 
-        .quote{
-            text-align:center;
-            font-size:22px;
-        }
+.left img,
+.right img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
 
-    }
+.quote{
+    font-family:"Times New Roman", serif;
+    font-size:40px;
+    font-style:italic;
+    line-height:1.7;
+    color:#222;
+}
+
+.author{
+    margin-top:30px;
+    font-size:20px;
+    font-weight:bold;
+    font-style:normal;
+    color:#444;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:18px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:900px){
+
+.row{
+    flex-direction:column;
+}
+
+.quote{
+    font-size:28px;
+    text-align:center;
+}
+
+.author{
+    text-align:center;
+    font-size:17px;
+}
+
+}
 
 </style>
 
 </head>
+
 <body>
 
 <header>
-    <h1>Welcome to TeaTechSeekers</h1>
-    <p>Myanmar MSc Students at Assam Agricultural University</p>
+
+<h1>Welcome to TeaTechSeekers</h1>
+
+<p>
+Myanmar MSc Students at Assam Agricultural University
+</p>
+
 </header>
 
-<section>
+<section class="about">
 
 <h2>About Us</h2>
 
 <p>
-This website shares academic resources, research activities,
-student information and tea science knowledge.
+TeaTechSeekers is a platform created by Myanmar M.Sc. students studying at Assam Agricultural University to share academic knowledge, research activities, student experiences, and innovations in tea science and technology.
 </p>
-
-<p>
-Coming Soon...
-</p>
-
-</section>
-<section class="gallery">
-
-    <div class="row">
-
-        <div class="left">
-            <img src="kzquo2.png" alt="Tea Garden">
-        </div>
-
-        <div class="right">
-            <p class="quote">
-                “In the heart of India's tea industry, I learn, research, and innovate to strengthen the future of tea.”
-                <br><br>
-                <strong>– M.Sc. Scholar, Department of Tea Husbandry & Technology, Assam Agricultural University</strong>
-            </p>
-        </div>
-
-    </div>
 
 </section>
 
 <section class="gallery">
 
-    <div class="row">
+<div class="row">
 
-        <div class="left">
-            <p class="quote">
-                “Growing knowledge, adding value, and shaping the future of tea at Assam Agricultural University.”
-                <br><br>
-                <strong>– M.Sc. Scholar, Department of Tea Husbandry & Technology, Assam Agricultural University</strong>
-            </p>
-        </div>
+<div class="left">
 
-        <div class="right">
-            <img src="mquo.png" alt="Seminar">
-        </div>
+<img src="kzquo2.png" alt="Tea Garden">
 
-    </div>
+</div>
+
+<div class="right">
+
+<p class="quote">
+
+“In the heart of India's tea industry, I learn, research, and innovate to strengthen the future of tea.”
+
+</p>
+
+<p class="author">
+
+– M.Sc. Scholar<br>
+Department of Tea Husbandry & Technology<br>
+Assam Agricultural University
+
+</p>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="left">
+
+<p class="quote">
+
+“Growing knowledge, adding value, and shaping the future of tea at Assam Agricultural University.”
+
+</p>
+
+<p class="author">
+
+– M.Sc. Scholar<br>
+Department of Tea Husbandry & Technology<br>
+Assam Agricultural University
+
+</p>
+
+</div>
+
+<div class="right">
+
+<img src="mquo.png" alt="Credit Seminar">
+
+</div>
+
+</div>
 
 </section>
+
 <footer>
 
-© 2026 TeaTechSeekers
+© 2026 TeaTechSeekers | Assam Agricultural University
 
 </footer>
 
 </body>
 </html>
-
