@@ -4,40 +4,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeaTechSeekers</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f4f4f4;
+   <style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        text-align:center;
+        margin:0;
+    }
+
+    header{
+        background:#006400;
+        color:white;
+        padding:50px;
+    }
+
+    h1{
+        margin:0;
+    }
+
+    section{
+        padding:40px;
+    }
+
+    footer{
+        background:#222;
+        color:white;
+        padding:15px;
+    }
+
+    a{
+        color:#006400;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    /* ---------- Gallery Section ---------- */
+
+    .gallery{
+        background:#eef7e5;
+        padding:70px 0;
+    }
+
+    .row{
+        width:90%;
+        margin:60px auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:50px;
+    }
+
+    .left,
+    .right{
+        width:48%;
+    }
+
+    .left img,
+    .right img{
+        width:100%;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    }
+
+    .quote{
+        font-size:30px;
+        font-style:italic;
+        line-height:1.8;
+        text-align:left;
+    }
+
+    /* Mobile */
+
+    @media(max-width:768px){
+
+        .row{
+            flex-direction:column;
+        }
+
+        .left,
+        .right{
+            width:100%;
+        }
+
+        .quote{
             text-align:center;
-            margin:0;
+            font-size:22px;
         }
 
-        header{
-            background:#006400;
-            color:white;
-            padding:50px;
-        }
+    }
 
-        h1{
-            margin:0;
-        }
-
-        section{
-            padding:40px;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            padding:15px;
-        }
-
-        a{
-            color:#006400;
-            text-decoration:none;
-            font-weight:bold;
-        }
-    </style>
+</style>
 
 </head>
 <body>
@@ -82,39 +138,24 @@ Coming Soon...
 </section>
 
 <section class="gallery">
-    .gallery{
-    background:#eef7e5;
-    padding:60px 0;
-}
 
-.row{
-    width:90%;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:80px;
-}
+    <div class="row">
 
-.left,
-.right{
-    width:45%;
-}
+        <div class="left">
+            <p class="quote">
+                “Growing knowledge, adding value, and shaping the future of tea at Assam Agricultural University.”
+                <br><br>
+                <strong>– M.Sc. Scholar, Department of Tea Husbandry & Technology, Assam Agricultural University</strong>
+            </p>
+        </div>
 
-.left img,
-.right img{
-    width:100%;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
+        <div class="right">
+            <img src="mquo.png" alt="Seminar">
+        </div>
 
-.quote{
-    font-size:32px;
-    font-style:italic;
-    line-height:1.8;
-    text-align:left;
-}
-    </section>
+    </div>
+
+</section>
 <footer>
 
 © 2026 TeaTechSeekers
