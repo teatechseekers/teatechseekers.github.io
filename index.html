@@ -133,7 +133,61 @@ footer{
     padding:25px;
     font-size:18px;
 }
+/* ================= SUGGESTION BOX ================= */
 
+.suggestion{
+    background:#eef7e5;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.suggestion h2{
+    color:#006400;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.suggestion p{
+    font-size:20px;
+    color:#444;
+    max-width:900px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.suggestion form{
+    max-width:700px;
+    margin:auto;
+}
+
+.suggestion input,
+.suggestion textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #bbb;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.suggestion textarea{
+    resize:vertical;
+}
+
+.suggestion button{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.suggestion button:hover{
+    background:#008000;
+}
 /* ================= MOBILE ================= */
 
 @media(max-width:900px){
@@ -180,12 +234,6 @@ header h3{
 
 <h1>Welcome to TeaTechSeekers</h1>
 
-<h3>Myanmar MSc Students at Assam Agricultural University</h3>
-
-<p class="motto">
-Exploring Tea Science Through Learning, Research & Innovation
-</p>
-
 </header>
 
 <!-- Full-width HOD Photo -->
@@ -201,7 +249,7 @@ Exploring Tea Science Through Learning, Research & Innovation
 <h2>About Us</h2>
 
 <p>
-TeaTechSeekers Webpage is an academic platform created by Myanmar M.Sc. students studying at Assam Agricultural University. Our mission is to promote tea science through research, innovation, academic collaboration, and knowledge sharing for students, researchers, and tea professionals around the world.
+TeaTechSeekers Webpage is an academic platform created by Myanmar M.Sc. students studying at Assam Agricultural University from 2024 to 2026. Our mission is to promote tea science through research, innovation, academic collaboration, and knowledge sharing for students, researchers, and tea professionals around the world.
 </p>
 
 </section>
@@ -241,9 +289,9 @@ Assam Agricultural University
 </p>
 
 <p class="author">
-– Myanmar M.Sc. Scholar<br>
+– Myanmar M.Sc. Scholar <br>
 Department of Tea Husbandry & Technology<br>
-Assam Agricultural University
+Assam Agricultural University 
 </p>
 
 </div>
@@ -257,7 +305,29 @@ Assam Agricultural University
 </div>
 
 </section>
+<section class="suggestion">
 
+<h2>Suggestions & Feedback</h2>
+
+<p>
+We welcome your ideas, suggestions, and feedback to improve TeaTechSeekers.
+Your valuable comments will help us create a better platform for students,
+researchers, and tea professionals.
+</p>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="6" placeholder="Write your suggestions here..."></textarea>
+
+<button type="submit">Send Suggestion</button>
+
+</form>
+
+</section>
 <footer>
 
 © 2026 TeaTechSeekers | Assam Agricultural University | Myanmar M.Sc. Scholars
